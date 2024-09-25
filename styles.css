@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #000000, #000000); /* Gradient background for effect */
+    /* or use a background image */
+    /* background: url('your-image-url.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(29, 32, 41, 0.8); /* Semi-transparent green background */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    background-color: rgba(3, 80, 196, 0.9); /* Darker green when scrolled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: rgb(250, 243, 243);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+    background-color: #1b1d20; /* Darker green for active/hover */
+    color: #ff0000; /* Gold color for active/hover */
+    border-radius: 5px;
+}
+
+.content {
+    padding-top: 60px; /* Adjust based on the height of the navbar */
+}
+
+section {
+    padding: 50px;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar ul {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    #navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
+    .content {
+        padding-top: 80px; /* Adjust padding if needed */
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar ul li a {
+        font-size: 14px;
+    }
+}
+img {
+    width: 100%; /* Make images take full width of the section */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Optional: Set a max height to prevent excessive height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    margin: 20px 0; /* Space around the images */
+}
+
+section {
+    padding: 50px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better visibility */
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
