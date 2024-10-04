@@ -1,4 +1,4 @@
-# Task 1: Interactive Navigation Menu
+# Task 1: Responsive Landing Page
 
 ## Project Overview
 This project showcases an interactive and responsive navigation menu. The menu is designed to remain fixed at the top of the page, ensuring constant visibility as users scroll through the website. The menu items dynamically change in style when users hover over them, providing visual feedback through background and font color transitions.
